@@ -32,12 +32,7 @@ ordered_multifunction_list.extend(other_multifunction_list)
 def show_res_link(row_idx):
     res_link = df.iloc[row_idx]['Res link']
     st.sidebar.info(f'Resource Link: {res_link}')
-
-
-def show_bionic_prototype_content(row_idx):
-    bionic_prototype = df.iloc[row_idx]['Bionic prototype']
-    st.sidebar.info(f'Bionic prototype is: {bionic_prototype}')
-
+  
 
 with st.sidebar:
     st.slider(
